@@ -2,7 +2,8 @@
 
 A small web project built with HTML, TypeScript and CSS. This README adds a screenshot placeholder and a small inline animated demo to showcase the UI.
 
-![screenshot](./assets/screenshot.png)
+![Uploading image.png…]()
+
 
 ## Animated preview
 
