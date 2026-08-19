@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%" style="background-color: #04060a; font-family: system-ui, -apple-system, sans-serif; border-radius: 16px; overflow: hidden;">
+  <defs>
+    <!-- Dark Glassmorphism Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060a"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+
+    <!-- Theme Gradients -->
+    <linearGradient id="glow-ruby" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="orb-core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Radial Glow Filter -->
+    <filter id="blur-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="intense-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1000" height="480" fill="url(#bg-grad)"/>
+
+  <!-- Subtle Ambient Glow Background Orbs -->
+  <circle cx="500" cy="240" r="180" fill="#e11d48" opacity="0.12" filter="url(#blur-glow)">
+    <animate attributeName="opacity" values="0.08;0.22;0.08" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="160;200;160" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="240" r="140" fill="#38bdf8" opacity="0.1" filter="url(#blur-glow)">
+    <animate attributeName="opacity" values="0.15;0.05;0.15" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Circular Grid Rings (3D Canvas Aesthetic) -->
+  <circle cx="500" cy="240" r="210" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-dasharray="6 6"/>
+  <circle cx="500" cy="240" r="160" fill="none" stroke="#e11d48" stroke-opacity="0.15" stroke-dasharray="12 12">
+    <animateTransform attributeName="transform" type="rotate" from="0 500 240" to="360 500 240" dur="25s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 3D Orbiting Energy Rings -->
+  <g transform="translate(500,240)">
+    <!-- Ring 1 (X/Y Ellipse Orbit) -->
+    <ellipse rx="130" ry="45" fill="none" stroke="url(#glow-ruby)" stroke-width="3" stroke-opacity="0.85" filter="url(#intense-glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Ring 2 (Opposite Axis Orbit) -->
+    <ellipse rx="130" ry="45" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.75" filter="url(#intense-glow)">
+      <animateTransform attributeName="transform" type="rotate" from="60" to="420" dur="11s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Ring 3 (Cross Axis Orbit) -->
+    <ellipse rx="130" ry="45" fill="none" stroke="#a855f7" stroke-width="2" stroke-opacity="0.8" filter="url(#intense-glow)">
+      <animateTransform attributeName="transform" type="rotate" from="120" to="-240" dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Central Glowing Core Sphere -->
+    <circle cx="0" cy="0" r="42" fill="url(#orb-core)" filter="url(#intense-glow)">
+      <animate attributeName="r" values="38;46;38" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="24" fill="#ffffff" opacity="0.9">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Orbiting Energy Particles -->
+    <circle cx="0" cy="0" r="4" fill="#ffffff">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="130,0; -130,0; 130,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    </circle>
+  </g>
+
+  <!-- Left Audio Waveform Visualizer -->
+  <g transform="translate(60, 240)">
+    <rect x="0" y="-30" width="4" height="60" rx="2" fill="#e11d48" opacity="0.8">
+      <animate attributeName="height" values="20;80;30;90;20" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-10;-40;-15;-45;-10" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="10" y="-20" width="4" height="40" rx="2" fill="#a855f7" opacity="0.8">
+      <animate attributeName="height" values="40;100;20;60;40" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-20;-50;-10;-30;-20" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="20" y="-40" width="4" height="80" rx="2" fill="#38bdf8" opacity="0.8">
+      <animate attributeName="height" values="70;30;110;40;70" dur="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-35;-15;-55;-20;-35" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="-25" width="4" height="50" rx="2" fill="#34d399" opacity="0.8">
+      <animate attributeName="height" values="30;90;40;70;30" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-15;-45;-20;-35;-15" dur="1.4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Right Audio Waveform Visualizer -->
+  <g transform="translate(900, 240)">
+    <rect x="0" y="-25" width="4" height="50" rx="2" fill="#34d399" opacity="0.8">
+      <animate attributeName="height" values="50;20;80;30;50" dur="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-25;-10;-40;-15;-25" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="10" y="-40" width="4" height="80" rx="2" fill="#38bdf8" opacity="0.8">
+      <animate attributeName="height" values="30;90;40;100;30" dur="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-15;-45;-20;-50;-15" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="20" y="-20" width="4" height="40" rx="2" fill="#a855f7" opacity="0.8">
+      <animate attributeName="height" values="60;20;80;40;60" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-30;-10;-40;-20;-30" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="-30" width="4" height="60" rx="2" fill="#e11d48" opacity="0.8">
+      <animate attributeName="height" values="20;70;30;85;20" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-10;-35;-15;-42;-10" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Header Overlay Badges -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="16" cy="16" r="4" fill="#34d399">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="30" y="21" fill="#34d399" font-size="12" font-weight="600" letter-spacing="1">LIVE DEMO MODE</text>
+  </g>
+
+  <g transform="translate(760, 40)">
+    <rect x="0" y="0" width="200" height="32" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#e11d48" stroke-opacity="0.3"/>
+    <text x="16" y="21" fill="#e11d48" font-size="12" font-weight="700" letter-spacing="1.5">SKILLZ LEARN AI v2.4</text>
+  </g>
+
+  <!-- Bottom Interactive Status Dock -->
+  <g transform="translate(250, 410)">
+    <rect x="0" y="0" width="500" height="42" rx="21" fill="#090d16" fill-opacity="0.8" stroke="#ffffff" stroke-opacity="0.15" filter="url(#intense-glow)"/>
+    <text x="250" y="26" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="500" letter-spacing="1">
+      ⚡ AI VOICE CORE: <tspan fill="#e11d48" font-weight="700">AUTONOMOUS CONVERSATION ACTIVE</tspan>
+    </text>
+  </g>
+</svg>
