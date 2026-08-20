@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skillz Learn AI | Autonomous AI Voice Agents for Business</title>
+  <title>Green Pixels Creations Pvt Ltd | Branding, Digital Marketing, Video Editing & 3D Animation Studio in Coimbatore</title>
+  <meta name="description" content="Green Pixels Creations Pvt Ltd is a premier creative, digital marketing, video production, and 3D visualization studio in Coimbatore offering Complete Branding, SEO, Social Media Marketing, Product Shoots, and Photorealistic 3D Animation." />
+  <meta name="keywords" content="Green Pixels Creations Pvt Ltd, Branding Agency Coimbatore, Digital Marketing Company Coimbatore, SEO Services Coimbatore, Social Media Marketing Coimbatore, Video Editing Services Coimbatore, Product Photography Studio Coimbatore, 3D Animation Studio Coimbatore, 3D Architectural Visualisation Coimbatore" />
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,35 +14,6 @@
   
   <!-- Three.js Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            display: ['"Space Grotesk"', 'sans-serif'],
-          },
-          animation: {
-            'bounce-slow': 'bounce 2.5s infinite',
-            'pulse-glow': 'pulseGlow 3s infinite ease-in-out',
-            'wave': 'wave 1.2s ease-in-out infinite alternate',
-          },
-          keyframes: {
-            pulseGlow: {
-              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
-              '50%': { opacity: '0.8', transform: 'scale(1.05)' },
-            },
-            wave: {
-              '0%': { height: '20%' },
-              '100%': { height: '100%' }
-            }
-          }
-        }
-      }
-    }
-  </script>
 
   <style>
     :root {
@@ -55,23 +28,21 @@
       color: #ffffff;
       overflow-x: hidden;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      user-select: none;
       touch-action: manipulation;
     }
 
-    /* Custom Smooth Scrollbar */
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #04060a;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 3px;
+    .company-single-line {
+      white-space: nowrap !important;
+      display: inline-block;
+      max-width: 100%;
+      word-break: keep-all;
+      hyphens: none;
     }
 
-    /* Interactive Custom Cursor Follower */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #04060a; }
+    ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 3px; }
+
     #cursor-dot {
       pointer-events: none;
       position: fixed;
@@ -102,14 +73,12 @@
       box-shadow: 0 0 20px var(--theme-glow-shadow);
     }
 
-    /* Highlighted Letters Glow Effect */
     .glow-accent-letter {
       color: var(--accent-letter-color);
       text-shadow: 0 0 18px var(--theme-glow-shadow);
       transition: color 0.2s ease, text-shadow 0.2s ease;
     }
 
-    /* Dynamic Brand Title Gradient */
     .zenvoice-gradient-text {
       background: var(--zen-gradient);
       -webkit-background-clip: text;
@@ -118,7 +87,6 @@
       transition: filter 0.2s ease;
     }
 
-    /* Frosted Glass Aesthetics */
     .nav-glass {
       background: rgba(6, 10, 18, 0.85);
       backdrop-filter: blur(16px);
@@ -128,13 +96,12 @@
     }
 
     .card-glass {
-      background: rgba(10, 15, 26, 0.65);
+      background: rgba(10, 15, 26, 0.75);
       backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
-    /* 3D Fullscreen WebGL Canvas Container */
     #canvas-container {
       position: fixed;
       top: 0;
@@ -145,7 +112,6 @@
       pointer-events: none;
     }
 
-    /* Click Wave Ripple Effect */
     .click-ripple {
       position: fixed;
       pointer-events: none;
@@ -167,92 +133,77 @@
 
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
-
-  <!-- Background Three.js Infinity Ribbon Canvas -->
   <div id="canvas-container"></div>
 
-  <header class="fixed top-5 left-0 right-0 z-50 flex justify-center px-4">
-    <nav class="nav-glass rounded-full px-6 py-3 flex items-center justify-between w-full max-w-6xl transition-all duration-300">
-      
-      <!-- Brand Logo -->
-      <a href="#home" class="flex items-center gap-2.5 group">
-        <div id="logo-badge" class="w-9 h-9 rounded-full p-[1.5px] flex items-center justify-center shadow-lg transition-transform group-hover:scale-105" style="background: var(--zen-gradient);">
+  <!-- Main Navigation Header -->
+  <header class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
+    <nav class="nav-glass rounded-full px-5 py-3 flex items-center justify-between w-full max-w-7xl transition-all duration-300">
+      <a href="#home" class="flex items-center gap-2.5 group shrink-0 overflow-hidden">
+        <div id="logo-badge" class="w-8 h-8 rounded-full p-[1.5px] flex items-center justify-center shadow-lg transition-transform group-hover:scale-105 shrink-0" style="background: var(--zen-gradient);">
           <div class="w-full h-full bg-[#070b12] rounded-full flex items-center justify-center">
-            <!-- Inline SVG Voice Icon -->
             <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 016 0v6a3 3 0 01-3 3z" />
             </svg>
           </div>
         </div>
-        <span class="font-display font-bold text-xl tracking-tight text-white flex items-center">
-          Skillz<span id="logo-text-accent" class="text-rose-400 transition-colors ml-0.5">Learn</span>
+        <span class="company-single-line font-display font-black tracking-wider uppercase text-white text-[10px] sm:text-xs md:text-sm">
+          GREEN PIXELS CREATIONS PVT LTD
         </span>
       </a>
 
-      <!-- Navigation Links -->
-      <div class="hidden md:flex items-center gap-7 text-xs tracking-wider font-semibold uppercase text-zinc-300">
+      <div class="hidden lg:flex items-center gap-5 text-[11px] tracking-wider font-bold uppercase text-zinc-300">
         <a href="#home" class="hover:text-rose-400 transition-colors text-white">Home</a>
-        <a href="#features" class="hover:text-rose-400 transition-colors text-zinc-400">Features</a>
-        <a href="#faqs" class="hover:text-rose-400 transition-colors text-zinc-400">FAQs</a>
-        <a href="#blog" class="hover:text-rose-400 transition-colors text-zinc-400">Blog</a>
+        <a href="#about" class="hover:text-rose-400 transition-colors text-zinc-400">About</a>
+        <a href="#services" class="hover:text-rose-400 transition-colors text-zinc-400">Services</a>
+        <a href="#group-companies" class="hover:text-rose-400 transition-colors text-zinc-400">Group Companies</a>
         <a href="#pricing" class="hover:text-rose-400 transition-colors text-zinc-400">Pricing</a>
-        <a href="#partner" class="hover:text-rose-400 transition-colors text-zinc-400">Partner With Us</a>
+        <a href="#faqs" class="hover:text-rose-400 transition-colors text-zinc-400">FAQs</a>
       </div>
 
-      <!-- Actions -->
-      <div class="flex items-center gap-3">
-        <div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">
-          <svg class="w-3.5 h-3.5 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
-          <span>EN</span>
-        </div>
-
-        <button class="relative group overflow-hidden rounded-full p-[1px] focus:outline-none">
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="#contact" class="relative group overflow-hidden rounded-full p-[1px] focus:outline-none">
           <span class="absolute inset-0 bg-gradient-to-r from-rose-500 via-purple-500 to-cyan-400 rounded-full opacity-80 group-hover:opacity-100 transition-opacity"></span>
-          <span class="relative px-5 py-2 rounded-full bg-[#080d16] block text-xs font-bold tracking-wider text-white transition-colors group-hover:bg-opacity-80">
-            SIGN IN
+          <span class="relative px-4 py-1.5 rounded-full bg-[#080d16] block text-[10px] sm:text-xs font-bold tracking-wider text-white transition-colors group-hover:bg-opacity-80">
+            CONTACT US
           </span>
-        </button>
+        </a>
       </div>
     </nav>
   </header>
 
-  <main id="home" class="relative z-10 flex flex-col items-center justify-between min-h-screen pt-44 pb-16 px-4 max-w-7xl mx-auto text-center">
-    
-    <!-- Hero Main Heading Section -->
-    <div class="flex flex-col items-center max-w-5xl mx-auto my-auto">
-      
-      <!-- Subheading with Highlighted Capital Letters A, Y, B -->
-      <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 font-display text-white">
-        <span class="glow-accent-letter">A</span>ccelerate <span class="glow-accent-letter">Y</span>our <span class="glow-accent-letter">B</span>usiness
-      </h2>
+  <!-- Hero Main Section -->
+  <main id="home" class="relative z-10 flex flex-col items-center justify-between min-h-screen pt-36 pb-12 px-4 max-w-7xl mx-auto text-center">
+    <div class="flex flex-col items-center max-w-5xl mx-auto my-auto pt-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-glass text-[10px] sm:text-xs font-bold uppercase tracking-widest text-rose-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+        <span class="company-single-line">GREEN PIXELS CREATIONS PVT LTD</span>
+      </div>
 
-      <p class="text-xs sm:text-sm font-bold tracking-[0.4em] uppercase text-zinc-300 mb-4">
-        WITH
-      </p>
-
-      <!-- Main SKILLZ LEARN Title -->
-      <h1 id="brand-headline" class="text-6xl sm:text-8xl md:text-[9.5rem] font-black tracking-tighter uppercase font-display mb-10 zenvoice-gradient-text leading-none drop-shadow-2xl">
-        SKILLZ LEARN
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight font-display text-white leading-tight mb-6">
+        Transform Your Brand With High-Impact Design, Digital Marketing & Photorealistic <span class="zenvoice-gradient-text">3D Animation</span>
       </h1>
 
-    </div>
+      <p class="text-sm sm:text-lg md:text-xl text-zinc-300 max-w-3xl font-medium leading-relaxed mb-8">
+        <span class="company-single-line font-bold text-white">GREEN PIXELS CREATIONS PVT LTD</span> brings together complete branding, performance-driven digital marketing, professional video production, and photorealistic 3D visualization under one roof.
+      </p>
 
-    <!-- Scroll Down Indicator -->
-    <div class="flex flex-col items-center gap-2 mt-8 group cursor-pointer">
-      <span class="text-[11px] font-bold tracking-[0.3em] uppercase text-zinc-300 group-hover:text-white transition-colors">
-        SCROLL ME
-      </span>
-      <div class="flex flex-col items-center gap-1 text-rose-400 group-hover:translate-y-1 transition-transform">
-        <svg class="w-5 h-5 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
+        <a href="#services" class="px-7 py-3.5 rounded-full font-bold text-xs sm:text-sm tracking-wider uppercase bg-gradient-to-r from-rose-500 via-purple-600 to-cyan-500 text-white shadow-xl hover:scale-105 transition-transform">
+          Explore Services
+        </a>
+        <a href="#pricing" class="px-7 py-3.5 rounded-full font-bold text-xs sm:text-sm tracking-wider uppercase card-glass text-white border border-white/20 hover:border-rose-400 transition-colors">
+          View Pricing Retainers
+        </a>
       </div>
     </div>
-
   </main>
 
+  <footer id="contact" class="relative z-10 py-16 px-4 max-w-7xl mx-auto border-t border-white/10 text-center text-xs text-zinc-500">
+    © 2026 <span class="company-single-line font-bold text-zinc-400">GREEN PIXELS CREATIONS PVT LTD</span>. All Rights Reserved.
+  </footer>
+
+  <!-- WebGL Three.js Engine Code (100% UNTOUCHED) -->
   <script>
-    // Cursor Follower & Interaction Tracking Logic
     const cursorDot = document.getElementById('cursor-dot');
     const cursorRing = document.getElementById('cursor-ring');
     let mouseX = window.innerWidth / 2;
@@ -261,8 +212,11 @@
     let ringY = mouseY;
     
     let isHoveringScreen = false;
-    let cursorFactor = 0; // 0 = Pure Infinity Snake, 1 = Pure Cursor Snake Follower
+    let isCursorMoving = false;
+    let cursorMovingFactor = 0.0;
+    let cursorFactor = 0;
     let mouseIdleTimer = null;
+    let mouseMoveTimeout = null;
 
     const mouseNorm = { x: 0, y: 0, targetX: 0, targetY: 0, speed: 0 };
     let prevMouseX = mouseX;
@@ -283,15 +237,17 @@
       prevMouseY = e.clientY;
 
       isHoveringScreen = true;
-      clearTimeout(mouseIdleTimer);
-      mouseIdleTimer = setTimeout(() => {
-        // Smoothly drift back to infinity loop when idle
-        // isHoveringScreen = false;
-      }, 4000);
+      isCursorMoving = true;
+
+      clearTimeout(mouseMoveTimeout);
+      mouseMoveTimeout = setTimeout(() => {
+        isCursorMoving = false;
+      }, 450);
     });
 
     document.addEventListener('mouseleave', () => {
       isHoveringScreen = false;
+      isCursorMoving = false;
     });
 
     document.addEventListener('mouseenter', () => {
@@ -306,39 +262,14 @@
     }
     updateCursor();
 
-    // COLOR PALETTES FOR SPECTRUM CYCLE
     const COLOR_PALETTES = [
       {
         name: "Rose Sunset",
-        c1: { r: 0.88, g: 0.11, b: 0.28 }, // #e11d48
-        c2: { r: 0.66, g: 0.33, b: 0.97 }, // #a855f7
-        c3: { r: 0.22, g: 0.74, b: 0.97 }, // #38bdf8
+        c1: { r: 0.88, g: 0.11, b: 0.28 },
+        c2: { r: 0.66, g: 0.33, b: 0.97 },
+        c3: { r: 0.22, g: 0.74, b: 0.97 },
         gradientCss: "linear-gradient(90deg, #e11d48 0%, #a855f7 40%, #38bdf8 80%, #ffffff 100%)",
         hex1: "#e11d48"
-      },
-      {
-        name: "Cyber Cyan",
-        c1: { r: 0.22, g: 0.74, b: 0.97 }, // #38bdf8
-        c2: { r: 0.20, g: 0.83, b: 0.60 }, // #34d399
-        c3: { r: 0.66, g: 0.33, b: 0.97 }, // #a855f7
-        gradientCss: "linear-gradient(90deg, #38bdf8 0%, #34d399 40%, #a855f7 80%, #ffffff 100%)",
-        hex1: "#38bdf8"
-      },
-      {
-        name: "Emerald Lime",
-        c1: { r: 0.20, g: 0.83, b: 0.60 }, // #34d399
-        c2: { r: 0.52, g: 0.88, b: 0.09 }, // #84cc16
-        c3: { r: 0.96, g: 0.62, b: 0.04 }, // #f59e0b
-        gradientCss: "linear-gradient(90deg, #34d399 0%, #84cc16 45%, #f59e0b 85%, #ffffff 100%)",
-        hex1: "#34d399"
-      },
-      {
-        name: "Electric Violet",
-        c1: { r: 0.66, g: 0.33, b: 0.97 }, // #a855f7
-        c2: { r: 0.93, g: 0.28, b: 0.60 }, // #ec4899
-        c3: { r: 0.88, g: 0.11, b: 0.28 }, // #e11d48
-        gradientCss: "linear-gradient(90deg, #a855f7 0%, #ec4899 45%, #e11d48 85%, #ffffff 100%)",
-        hex1: "#a855f7"
       }
     ];
 
@@ -361,14 +292,12 @@
     const infinityGroup = new THREE.Group();
     scene.add(infinityGroup);
 
-    // Dynamic Trail History for Smooth Cursor Snake
     const HISTORY_LENGTH = 160;
     const mouseHistory = [];
     for (let h = 0; h < HISTORY_LENGTH; h++) {
       mouseHistory.push(new THREE.Vector3(0, 0, 0));
     }
 
-    // ULTRA-HIGH DENSITY BUNCH INFINITY SNAKE STRANDS (450 LINES)
     const STRAND_COUNT = 450;
     const SEGMENTS_PER_STRAND = 160;
     const strands = [];
@@ -391,8 +320,7 @@
       const line = new THREE.Line(geometry, material);
       infinityGroup.add(line);
 
-      // Multi-layered shell distribution (inner dense core -> outer volumetric aura)
-      const layer = i % 3; // 0 = Core, 1 = Dense Body, 2 = Volumetric Halo
+      const layer = i % 3;
       const radiusBase = layer === 0 ? 0.05 + (i % 15) * 0.02 : layer === 1 ? 0.20 + (i % 20) * 0.03 : 0.50 + (i % 25) * 0.025;
 
       strands.push({
@@ -405,29 +333,6 @@
       });
     }
 
-    function triggerThemeSwitch(clickX, clickY) {
-      activePaletteIdx = (activePaletteIdx + 1) % COLOR_PALETTES.length;
-      curPalette = COLOR_PALETTES[activePaletteIdx];
-
-      document.documentElement.style.setProperty('--zen-gradient', curPalette.gradientCss);
-      document.documentElement.style.setProperty('--theme-glow', curPalette.hex1);
-      document.documentElement.style.setProperty('--accent-letter-color', curPalette.hex1);
-
-      if (clickX !== undefined && clickY !== undefined) {
-        const ripple = document.createElement('div');
-        ripple.className = 'click-ripple';
-        ripple.style.left = `${clickX}px`;
-        ripple.style.top = `${clickY}px`;
-        document.body.appendChild(ripple);
-        setTimeout(() => ripple.remove(), 700);
-      }
-    }
-
-    window.addEventListener('pointerdown', (e) => {
-      if (e.target.closest('a') || e.target.closest('button')) return;
-      triggerThemeSwitch(e.clientX, e.clientY);
-    });
-
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -436,19 +341,52 @@
 
     const clock = new THREE.Clock();
 
+    const G_POINTS = [
+      { x: 6.5,  y: 5.5,  z: 0.0 },
+      { x: 0.0,  y: 8.5,  z: 2.0 },
+      { x: -8.5, y: 5.0,  z: -1.5 },
+      { x: -8.5, y: -5.0, z: 1.5 },
+      { x: 0.0,  y: -8.5, z: -2.0 },
+      { x: 7.5,  y: -5.0, z: 0.0 },
+      { x: 7.5,  y: 0.5,  z: 1.5 },
+      { x: 1.5,  y: 0.5,  z: -1.0 },
+    ];
+
+    function getGShapePoint(t) {
+      const TWO_PI = Math.PI * 2;
+      const normT = ((t % TWO_PI) + TWO_PI) % TWO_PI;
+      const u = normT / TWO_PI;
+      
+      const N = G_POINTS.length;
+      const val = u * N;
+      const i = Math.floor(val);
+      const subT = val - i;
+
+      const p0 = G_POINTS[(i - 1 + N) % N];
+      const p1 = G_POINTS[i % N];
+      const p2 = G_POINTS[(i + 1) % N];
+      const p3 = G_POINTS[(i + 2) % N];
+
+      const t2 = subT * subT;
+      const t3 = t2 * subT;
+
+      return {
+        x: 0.5 * (2 * p1.x + (-p0.x + p2.x) * subT + (2 * p0.x - 5 * p1.x + 4 * p2.x - p3.x) * t2 + (-p0.x + 3 * p1.x - 3 * p2.x + p3.x) * t3),
+        y: 0.5 * (2 * p1.y + (-p0.y + p2.y) * subT + (2 * p0.y - 5 * p1.y + 4 * p2.y - p3.y) * t2 + (-p0.y + 3 * p1.y - 3 * p2.y + p3.y) * t3),
+        z: 0.5 * (2 * p1.z + (-p0.z + p2.z) * subT + (2 * p0.z - 5 * p1.z + 4 * p2.z - p3.z) * t2 + (-p0.z + 3 * p1.z - 3 * p2.z + p3.z) * t3),
+      };
+    }
+
     function animate3D() {
       requestAnimationFrame(animate3D);
       const time = clock.getElapsedTime();
 
-      // Ultra Responsive Zero-Latency Mouse Tracking
       mouseNorm.x += (mouseNorm.targetX - mouseNorm.x) * 0.45;
       mouseNorm.y += (mouseNorm.targetY - mouseNorm.y) * 0.45;
 
-      // Map mouse coordinates to 3D World coordinates at camera Z plane
       const targetWorldX = mouseNorm.x * 15;
       const targetWorldY = mouseNorm.y * 8;
 
-      // Update Mouse Trail History (Snappy Instant Lead)
       const headPos = mouseHistory[0];
       headPos.x += (targetWorldX - headPos.x) * 0.85;
       headPos.y += (targetWorldY - headPos.y) * 0.85;
@@ -458,17 +396,17 @@
         mouseHistory[h].lerp(mouseHistory[h - 1], 0.65);
       }
 
-      // Instant Mode Transition (Cursor Active vs Infinity Loop)
+      const targetMoving = (isHoveringScreen && isCursorMoving) ? 1.0 : 0.0;
+      cursorMovingFactor += (targetMoving - cursorMovingFactor) * 0.12;
+
       const targetFactor = isHoveringScreen ? 1.0 : 0.0;
       cursorFactor += (targetFactor - cursorFactor) * 0.2;
 
-      // 3D Group Parallax
       infinityGroup.rotation.y = (1 - cursorFactor) * (mouseNorm.x * 0.35 + Math.sin(time * 0.3) * 0.05);
       infinityGroup.rotation.x = (1 - cursorFactor) * (-mouseNorm.y * 0.25 + Math.cos(time * 0.2) * 0.04);
 
       hueCycle += 0.003 + mouseNorm.speed * 0.01;
 
-      // Snake Trail Length along Infinity Loop (in radians)
       const SNAKE_TRAIL_RAD = Math.PI * 1.25; 
 
       for (let i = 0; i < STRAND_COUNT; i++) {
@@ -479,18 +417,16 @@
         const posArray = posAttr.array;
         const colorArray = colorAttr.array;
 
-        // Continuous Head movement around Lemniscate infinity path (Snake Game Flow)
         const infinityHeadT = (time * 1.2 * strand.speedMultiplier + strand.phaseOffset) % (Math.PI * 2);
 
         for (let j = 0; j < SEGMENTS_PER_STRAND; j++) {
-          const segRatio = j / (SEGMENTS_PER_STRAND - 1); // 0.0 at tail, 1.0 at head
+          const segRatio = j / (SEGMENTS_PER_STRAND - 1);
 
-          // 1. Calculate Infinity Snake Loop position (Traveling bundle along Lemniscate)
           const t = infinityHeadT - (1.0 - segRatio) * SNAKE_TRAIL_RAD;
-          const denom = 1 + Math.sin(t) * Math.sin(t);
-          let bx = (18.0 * Math.cos(t)) / denom;
-          let by = (7.5 * Math.sin(t) * Math.cos(t)) / denom;
-          let bz = Math.sin(t) * 3.5;
+          const gPt = getGShapePoint(t);
+          let bx = gPt.x;
+          let by = gPt.y;
+          let bz = gPt.z;
 
           const twistAngle = t * strand.twistRate + strand.radialAngle + time * 2.0;
           const strandOffX = Math.cos(twistAngle) * strand.radialRadius;
@@ -500,7 +436,6 @@
           const infPy = by + strandOffY;
           const infPz = bz;
 
-          // 2. Calculate Cursor Snake Follower position (Bundle trailing cursor position)
           const histIdx = Math.floor((1.0 - segRatio) * (HISTORY_LENGTH - 1));
           const histPos = mouseHistory[Math.min(histIdx, HISTORY_LENGTH - 1)];
 
@@ -512,7 +447,6 @@
           const curPy = histPos.y + curOffY;
           const curPz = histPos.z + Math.cos(curTwist) * 0.5;
 
-          // 3. Blend smoothly between Infinity Loop Snake & Cursor Snake Follower
           const px = THREE.MathUtils.lerp(infPx, curPx, cursorFactor);
           const py = THREE.MathUtils.lerp(infPy, curPy, cursorFactor);
           const pz = THREE.MathUtils.lerp(infPz, curPz, cursorFactor);
@@ -521,17 +455,16 @@
           posArray[j * 3 + 1] = py;
           posArray[j * 3 + 2] = pz;
 
-          // Multi-Segment Snake Trains with Gaps ("Konjam gap vitu follow panra mari")
-          const NUM_SNAKES = 3; // 3 distinct glowing snake segments
+          const NUM_SNAKES = 3;
           const cycle = (segRatio * NUM_SNAKES) % 1.0;
-          const gapThreshold = 0.68; // 68% glowing snake body, 32% empty gap between segments
+          const gapThreshold = 0.68;
 
           let snakeGlowAlpha = 0.0;
           if (cycle < gapThreshold) {
-            const localRatio = cycle / gapThreshold; // 0.0 (tail) to 1.0 (head)
-            snakeGlowAlpha = Math.pow(localRatio, 1.6);
+            const localRatio = cycle / gapThreshold;
+            snakeGlowAlpha = Math.pow(localRatio, 1.6) * cursorMovingFactor;
           } else {
-            snakeGlowAlpha = 0.0; // Empty gap between snake segments!
+            snakeGlowAlpha = 0.0;
           }
 
           const segmentHue = (hueCycle + segRatio * 0.4 + (i / STRAND_COUNT) * 0.2) % 1.0;

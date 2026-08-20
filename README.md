@@ -1,162 +1,114 @@
-# 🚀 Skillz Learn AI — Autonomous AI Voice Agents for Business
+# 🎨 GREEN PIXELS CREATIONS PVT LTD — Premier Creative, Digital Marketing & 3D Production Studio
 
 <div align="center">
 
-  ![Skillz Learn AI Banner](./assets/banner.jpg)
+  <h1>GREEN PIXELS CREATIONS PVT LTD</h1>
+  <p><b>Complete Branding · Performance Digital Marketing (SEO & SMM) · Video Editing · 3D Visualisation & 3D Animation</b></p>
+  <p><i>Coimbatore, Tamil Nadu, India</i></p>
 
   <br />
 
-  [![Deploy Status](https://img.shields.io/badge/Deployment-Live%20on%20GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://tharunmtb-racer21.github.io/startup-company-project/)
-  [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
-  [![Three.js](https://img.shields.io/badge/Three.js-r185-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
+  [![Vercel Deployment](https://img.shields.io/badge/Vercel-Live--Production-brightgreen?style=for-the-badge&logo=vercel)](https://green-pixels-creations.vercel.app)
+  [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Tharunmtb-racer21/startup-company-project)
+  [![Three.js WebGL](https://img.shields.io/badge/Three.js-r128-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.3-38BDF8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-  [![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)](./LICENSE)
 
   <br />
 
-  ### 🌐 **Live Demo Application**: [https://tharunmtb-racer21.github.io/startup-company-project/](https://tharunmtb-racer21.github.io/startup-company-project/)
+  ### 🌐 **Live Production Website**: [https://green-pixels-creations.vercel.app](https://green-pixels-creations.vercel.app)
 
 </div>
 
 ---
 
-## 📽️ Interactive 3D Core Animation
+## 🌟 About GREEN PIXELS CREATIONS PVT LTD
 
-<div align="center">
-  <img src="./assets/demo.svg" alt="Skillz Learn AI 3D Core Animation" width="100%" />
-  <p><i>Live interactive 3D particle sphere and dynamic ambient waveform loop.</i></p>
-</div>
+**GREEN PIXELS CREATIONS PVT LTD** is a premier multi-disciplinary creative studio in Coimbatore, Tamil Nadu, bringing together **Complete Branding**, **Performance Digital Marketing (SEO & SMM)**, **Video Production & Editing**, and **Photorealistic 3D Visualisation & 3D Animation** under one roof.
 
----
-
-## 🌟 Overview
-
-**Skillz Learn AI** is a state-of-the-art web application showcasing **Autonomous AI Voice Agents for Enterprise & Business**. Built with **React 19, Three.js, TypeScript, and Tailwind CSS v4**, the application features an immersive **interactive 3D canvas**, real-time audio waveform visualizers, dynamic theme switching, glassmorphic UI cards, and responsive micro-interactions.
-
-### ✨ Key Features
-
-- **🌐 Interactive 3D Holographic Core**: 3D mesh particle node rendered using Three.js with fluid camera damping, rotational inertia drag, and ambient pulse breathing.
-- **🎨 Dynamic Theme Engine**: Switch between 4 curated neon color presets (**Ruby Red**, **Zen Violet**, **Electric Cyan**, **Hyper Emerald**) that instantly mutate 3D shaders, glows, borders, and CSS variables.
-- **🎙️ Real-time Audio Visualizer**: Interactive audio player equipped with live animated frequency spectrum bars and voice pitch controls.
-- **⚡ Sub-100ms Latency UI**: Built on Vite 8 for blazing-fast speed and instant rendering.
-- **💎 Glassmorphic Modern Aesthetic**: Premium dark-mode interface with subtle neon backlights, custom cursor tracking, and fluid Framer Motion state transitions.
-- **📱 Fully Responsive**: Optimized across desktop, tablet, and mobile displays.
+Instead of managing separate agencies for design, search optimization, video shoots, and 3D rendering, enterprises, startups, real estate developers, and product manufacturers partner with **GREEN PIXELS CREATIONS PVT LTD** for streamlined visual excellence and ROI-focused digital growth.
 
 ---
 
-## 📸 Interface Screenshots
+## 🚀 Three Core Service Packages
 
-<div align="center">
-  <h3>Hero & 3D Interactive Canvas</h3>
-  <img src="./assets/hero-preview.png" alt="Skillz Learn AI Hero Preview" width="90%" />
-  <br/><br/>
-  <h3>Features & Autonomous Capabilities Showcase</h3>
-  <img src="./assets/features-preview.png" alt="Skillz Learn AI Features Section" width="90%" />
-</div>
+### 01 — Complete Branding & Digital Marketing
+* **Complete Branding**: Logo Identity, Full Brand Guideline Documents, Business Collateral Sets.
+* **Search Engine Optimization (SEO)**: Technical SEO, On-Page Tuning, High-Authority Off-Page Backlinking, Local SEO.
+* **Social Media Marketing (SMM)**: Instagram Reels, High-Converting Content Creation, Meta & Google Lead Ad Campaigns.
+* **Retainer Rates**: ₹15,000 / mo (Starter) · ₹32,000 / mo (Growth) · ₹65,000 / mo (Premium).
+
+### 02 — Graphics, Video Editing & Product Photography
+* **Graphic Design**: Social Media Creatives, Marketing Banners, E-commerce Product Catalogues.
+* **Video Production**: Instagram Reels & Shorts Editing, 4K Corporate Promotional Videos.
+* **Product Photography**: Studio Product Catalogue Shoots, Lighting & Post-Processing.
+* **Retainer Rates**: ₹10,000 / mo (Starter) · ₹27,000 / mo (Growth) · ₹52,000 / mo (Premium).
+* **One-Time Rates**: ₹600 / product shoot · ₹9,000 half-day shoot · ₹3,500 / reel edit · ₹6,000 / min corporate video.
+
+### 03 — 3D Visualisation & 3D Animation
+* **3D Visualisation**: Photorealistic Product Rendering, Architectural Interior & Exterior Render Sets.
+* **3D Animation**: Real Estate 3D Architectural Walkthrough Videos, 3D Product CAD Modelling, Commercial 3D Explainer Videos.
+* **Project Rates**: Single Render ₹8,000 · Interior/Exterior Set ₹30,000 · 3D Product Model ₹12,000 · 3D Walkthrough ₹75,000 · 3D Animation Video ₹85,000.
 
 ---
 
-## 🛠️ Tech Stack
+## 🏢 Group Companies & Extended Ecosystem
 
-| Category | Technology | Description |
+- 🌐 **Skilzlearn Academy** ([skilzlearn.com](https://skilzlearn.com)): EdTech & Skill Development Academy offering practical AI, software, and digital design education.
+- 🛸 **CARDA — Coimbatore Aerospace, Robotics & Drone Academy** ([cardaindia.com](https://cardaindia.com)): Advanced training and research center for drone engineering, robotics, and autonomous systems.
+
+---
+
+## 🎨 Interactive 3D WebGL Visual Identity
+
+The website features a hardware-accelerated **Three.js WebGL background engine**:
+- **450 Volumetric Strands**: Over 72,000 dynamically shaded 3D line vertices.
+- **Catmull-Rom 'G' Spline**: Smooth mathematical 3D curve tracing out the letter 'G'.
+- **Motion-Activated Interaction**: Glowing strands light up and follow the cursor when active motion occurs, fading out gracefully when idle.
+- **Zero-Latency Damping**: Fluid mouse lead tracking with spring physics and click shockwave ripples.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+| Layer | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Frontend Core** | **React 19** & **TypeScript** | Component architecture & strict type safety |
-| **3D & Graphics** | **Three.js** / **R3F** / **Drei** | Interactive 3D WebGL scenes, particle physics & materials |
-| **Styling** | **Tailwind CSS v4** | Utility-first styling & custom CSS glassmorphism variables |
-| **Animations** | **Framer Motion** & **SVG Motion** | Smooth UI transitions & interactive micro-animations |
-| **Icons & UI** | **Lucide React** | Modern iconography set |
-| **Build System** | **Vite 8** | Ultra-fast development server & production bundler |
+| **Frontend Framework** | **HTML5 / React 19 / TypeScript** | Responsive semantic structure & component state |
+| **3D Graphics** | **Three.js (r128)** & **WebGL** | Hardware-accelerated 3D particle spline rendering |
+| **Styling** | **Tailwind CSS v4** & **Vanilla CSS** | Glassmorphic dark theme, CSS variable mutations |
+| **SEO & AEO** | **JSON-LD Schemas** | `Organization`, `LocalBusiness`, `Service`, `OfferCatalog` |
+| **Deployment** | **Vercel** & **GitHub Pages** | Edge serverless hosting with continuous deployment |
 
 ---
 
-## 📂 Project Structure
-
-```bash
-startup-company-project/
-├── assets/                  # High-resolution screenshots, banners & SVG animations
-│   ├── banner.jpg           # 3D Holographic Hero Banner
-│   ├── demo.svg             # Animated 3D Core SVG Loop
-│   ├── hero-preview.png     # Full-screen desktop preview screenshot
-│   └── features-preview.png # Features grid preview screenshot
-├── public/                  # Static assets & favicon
-├── src/                     # React application source code
-│   ├── components/          # 3D Scene components & Overlay UI
-│   │   ├── scene/           # ProductCore, ProductLighting, CameraRig, Particles
-│   │   └── ui/              # Overlay UI, Control dock, Status bar
-│   ├── App.tsx              # Main application wrapper
-│   └── main.tsx             # Entry point
-├── index.html               # Main HTML entry with embedded 3D showcase
-├── package.json             # Dependencies & build scripts
-├── tsconfig.json            # TypeScript configuration
-└── vite.config.ts           # Vite build configuration
-```
-
----
-
-## 🚀 Quick Start Guide
-
-Follow these steps to set up and run the project locally on your machine:
+## 💻 Quick Start & Local Setup
 
 ### Prerequisites
+- Node.js 18+ and npm installed
 
-Ensure you have **Node.js 18+** and **npm** installed.
-
-### 1. Clone the Repository
-
+### 1. Clone & Install
 ```bash
 git clone https://github.com/Tharunmtb-racer21/startup-company-project.git
 cd startup-company-project
-```
-
-### 2. Install Dependencies
-
-```bash
 npm install
 ```
 
-### 3. Run Development Server
-
+### 2. Run Locally
 ```bash
 npm run dev
 ```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the live app.
-
-### 4. Build for Production
-
+### 3. Build Production Bundle
 ```bash
 npm run build
 ```
 
-The optimized production bundle will be generated in the `dist/` directory.
-
 ---
 
-## 🌐 Deployment
+## 📄 License & Official Details
 
-This project is deployed live on **GitHub Pages**. 
-
-You can view the deployed application here:  
-👉 **[https://tharunmtb-racer21.github.io/startup-company-project/](https://tharunmtb-racer21.github.io/startup-company-project/)**
-
-To deploy updates to GitHub Pages:
-1. Commit all code changes to the `main` branch.
-2. Ensure GitHub Pages is set to build from `main` root in repository settings.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to check the [issues page](https://github.com/Tharunmtb-racer21/startup-company-project/issues).
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
-
-<div align="center">
-  <sub>Built with ❤️ for AI Voice Innovation</sub>
-</div>
+- **Company Name**: **GREEN PIXELS CREATIONS PVT LTD**
+- **Location**: Coimbatore, Tamil Nadu, India
+- **Websites**: [green-pixels-creations.vercel.app](https://green-pixels-creations.vercel.app) | [skilzlearn.com](https://skilzlearn.com) | [cardaindia.com](https://cardaindia.com)
+- **License**: MIT License © 2026 GREEN PIXELS CREATIONS PVT LTD. All Rights Reserved.

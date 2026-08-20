@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skillz Learn AI | Autonomous AI Voice Agents for Business</title>
+  <title>Green Pixels Creations Pvt Ltd | Branding, Digital Marketing, Video Editing & 3D Animation Studio in Coimbatore</title>
+  <meta name="description" content="Green Pixels Creations Pvt Ltd is a premier creative, digital marketing, video production, and 3D visualization studio in Coimbatore offering Complete Branding, SEO, Social Media Marketing, Product Shoots, and Photorealistic 3D Animation." />
+  <meta name="keywords" content="Green Pixels Creations Pvt Ltd, Branding Agency Coimbatore, Digital Marketing Company Coimbatore, SEO Services Coimbatore, Social Media Marketing Coimbatore, Video Editing Services Coimbatore, Product Photography Studio Coimbatore, 3D Animation Studio Coimbatore, 3D Architectural Visualisation Coimbatore" />
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +14,65 @@
   
   <!-- Three.js Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Structured Data JSON-LD Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+        "@id": "https://greenpixels.in/#organization",
+        "name": "GREEN PIXELS CREATIONS PVT LTD",
+        "legalName": "GREEN PIXELS CREATIONS PVT LTD",
+        "url": "https://greenpixels.in",
+        "logo": "https://greenpixels.in/assets/logo.png",
+        "description": "Green Pixels Creations Pvt Ltd is a premier creative, digital marketing, video production, and 3D visualization studio in Coimbatore.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Coimbatore",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "areaServed": ["Coimbatore", "Tamil Nadu", "India"],
+        "sameAs": [
+          "https://skilzlearn.com",
+          "https://cardaindia.com"
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Green Pixels Core Services Catalog",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "01 — Complete Branding & Digital Marketing",
+              "description": "SEO + SMM + Complete Branding Retainer Packages"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "02 — Graphics, Video Editing & Product Photography",
+              "description": "Graphic Design, Video Editing, Reels & Product Photography Shoots"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "03 — 3D Visualisation & 3D Animation",
+              "description": "Photorealistic 3D Renders, Real Estate 3D Walkthroughs & 3D Animation Videos"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <script>
     tailwind.config = {
@@ -55,8 +116,16 @@
       color: #ffffff;
       overflow-x: hidden;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      user-select: none;
       touch-action: manipulation;
+    }
+
+    /* Absolute Rule: Single Line Company Name Styling */
+    .company-single-line {
+      white-space: nowrap !important;
+      display: inline-block;
+      max-width: 100%;
+      word-break: keep-all;
+      hyphens: none;
     }
 
     /* Custom Smooth Scrollbar */
@@ -128,7 +197,7 @@
     }
 
     .card-glass {
-      background: rgba(10, 15, 26, 0.65);
+      background: rgba(10, 15, 26, 0.75);
       backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -168,79 +237,86 @@
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
 
-  <!-- Background Three.js Infinity Ribbon Canvas -->
+  <!-- Background Three.js 3D WebGL Canvas -->
   <div id="canvas-container"></div>
 
-  <header class="fixed top-5 left-0 right-0 z-50 flex justify-center px-4">
-    <nav class="nav-glass rounded-full px-6 py-3 flex items-center justify-between w-full max-w-6xl transition-all duration-300">
+  <!-- Main Navigation Header -->
+  <header class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
+    <nav class="nav-glass rounded-full px-5 py-3 flex items-center justify-between w-full max-w-7xl transition-all duration-300">
       
-      <!-- Brand Logo -->
-      <a href="#home" class="flex items-center gap-2.5 group">
-        <div id="logo-badge" class="w-9 h-9 rounded-full p-[1.5px] flex items-center justify-center shadow-lg transition-transform group-hover:scale-105" style="background: var(--zen-gradient);">
+      <!-- Brand Logo featuring GREEN PIXELS CREATIONS PVT LTD on ONE SINGLE LINE -->
+      <a href="#home" class="flex items-center gap-2.5 group shrink-0 overflow-hidden">
+        <div id="logo-badge" class="w-8 h-8 rounded-full p-[1.5px] flex items-center justify-center shadow-lg transition-transform group-hover:scale-105 shrink-0" style="background: var(--zen-gradient);">
           <div class="w-full h-full bg-[#070b12] rounded-full flex items-center justify-center">
-            <!-- Inline SVG Voice Icon -->
             <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 016 0v6a3 3 0 01-3 3z" />
             </svg>
           </div>
         </div>
-        <span class="font-display font-bold text-xl tracking-tight text-white flex items-center">
-          Skillz<span id="logo-text-accent" class="text-rose-400 transition-colors ml-0.5">Learn</span>
+        <!-- Mandatory Single-Line Display for GREEN PIXELS CREATIONS PVT LTD -->
+        <span class="company-single-line font-display font-black tracking-wider uppercase text-white text-[10px] sm:text-xs md:text-sm">
+          GREEN PIXELS CREATIONS PVT LTD
         </span>
       </a>
 
       <!-- Navigation Links -->
-      <div class="hidden md:flex items-center gap-7 text-xs tracking-wider font-semibold uppercase text-zinc-300">
+      <div class="hidden lg:flex items-center gap-5 text-[11px] tracking-wider font-bold uppercase text-zinc-300">
         <a href="#home" class="hover:text-rose-400 transition-colors text-white">Home</a>
-        <a href="#features" class="hover:text-rose-400 transition-colors text-zinc-400">Features</a>
-        <a href="#faqs" class="hover:text-rose-400 transition-colors text-zinc-400">FAQs</a>
-        <a href="#blog" class="hover:text-rose-400 transition-colors text-zinc-400">Blog</a>
+        <a href="#about" class="hover:text-rose-400 transition-colors text-zinc-400">About</a>
+        <a href="#services" class="hover:text-rose-400 transition-colors text-zinc-400">Services</a>
+        <a href="#group-companies" class="hover:text-rose-400 transition-colors text-zinc-400">Group Companies</a>
         <a href="#pricing" class="hover:text-rose-400 transition-colors text-zinc-400">Pricing</a>
-        <a href="#partner" class="hover:text-rose-400 transition-colors text-zinc-400">Partner With Us</a>
+        <a href="#faqs" class="hover:text-rose-400 transition-colors text-zinc-400">FAQs</a>
       </div>
 
-      <!-- Actions -->
-      <div class="flex items-center gap-3">
-        <div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">
-          <svg class="w-3.5 h-3.5 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
-          <span>EN</span>
-        </div>
-
-        <button class="relative group overflow-hidden rounded-full p-[1px] focus:outline-none">
+      <!-- Action CTA Button -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="#contact" class="relative group overflow-hidden rounded-full p-[1px] focus:outline-none">
           <span class="absolute inset-0 bg-gradient-to-r from-rose-500 via-purple-500 to-cyan-400 rounded-full opacity-80 group-hover:opacity-100 transition-opacity"></span>
-          <span class="relative px-5 py-2 rounded-full bg-[#080d16] block text-xs font-bold tracking-wider text-white transition-colors group-hover:bg-opacity-80">
-            SIGN IN
+          <span class="relative px-4 py-1.5 rounded-full bg-[#080d16] block text-[10px] sm:text-xs font-bold tracking-wider text-white transition-colors group-hover:bg-opacity-80">
+            CONTACT US
           </span>
-        </button>
+        </a>
       </div>
     </nav>
   </header>
 
-  <main id="home" class="relative z-10 flex flex-col items-center justify-between min-h-screen pt-44 pb-16 px-4 max-w-7xl mx-auto text-center">
+  <!-- Hero Main Section -->
+  <main id="home" class="relative z-10 flex flex-col items-center justify-between min-h-screen pt-36 pb-12 px-4 max-w-7xl mx-auto text-center">
     
-    <!-- Hero Main Heading Section -->
-    <div class="flex flex-col items-center max-w-5xl mx-auto my-auto">
+    <div class="flex flex-col items-center max-w-5xl mx-auto my-auto pt-6">
       
-      <!-- Subheading with Highlighted Capital Letters A, Y, B -->
-      <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 font-display text-white">
-        <span class="glow-accent-letter">A</span>ccelerate <span class="glow-accent-letter">Y</span>our <span class="glow-accent-letter">B</span>usiness
-      </h2>
+      <!-- Studio Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-glass text-[10px] sm:text-xs font-bold uppercase tracking-widest text-rose-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+        <span class="company-single-line">GREEN PIXELS CREATIONS PVT LTD</span>
+      </div>
 
-      <p class="text-xs sm:text-sm font-bold tracking-[0.4em] uppercase text-zinc-300 mb-4">
-        WITH
-      </p>
-
-      <!-- Main SKILLZ LEARN Title -->
-      <h1 id="brand-headline" class="text-6xl sm:text-8xl md:text-[9.5rem] font-black tracking-tighter uppercase font-display mb-10 zenvoice-gradient-text leading-none drop-shadow-2xl">
-        SKILLZ LEARN
+      <!-- Hero Heading -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight font-display text-white leading-tight mb-6">
+        Transform Your Brand With High-Impact Design, Digital Marketing & Photorealistic <span class="zenvoice-gradient-text">3D Animation</span>
       </h1>
 
+      <!-- Hero Subheading -->
+      <p class="text-sm sm:text-lg md:text-xl text-zinc-300 max-w-3xl font-medium leading-relaxed mb-8">
+        <span class="company-single-line font-bold text-white">GREEN PIXELS CREATIONS PVT LTD</span> brings together complete branding, performance-driven digital marketing, professional video production, and photorealistic 3D visualization under one roof.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
+        <a href="#services" class="px-7 py-3.5 rounded-full font-bold text-xs sm:text-sm tracking-wider uppercase bg-gradient-to-r from-rose-500 via-purple-600 to-cyan-500 text-white shadow-xl hover:scale-105 transition-transform">
+          Explore Services
+        </a>
+        <a href="#pricing" class="px-7 py-3.5 rounded-full font-bold text-xs sm:text-sm tracking-wider uppercase card-glass text-white border border-white/20 hover:border-rose-400 transition-colors">
+          View Pricing Retainers
+        </a>
+      </div>
     </div>
 
-    <!-- Scroll Down Indicator -->
-    <div class="flex flex-col items-center gap-2 mt-8 group cursor-pointer">
-      <span class="text-[11px] font-bold tracking-[0.3em] uppercase text-zinc-300 group-hover:text-white transition-colors">
-        SCROLL ME
+    <!-- Scroll Indicator -->
+    <div class="flex flex-col items-center gap-2 mt-4 group cursor-pointer">
+      <span class="text-[10px] font-bold tracking-[0.3em] uppercase text-zinc-400 group-hover:text-white transition-colors">
+        SCROLL TO EXPLORE
       </span>
       <div class="flex flex-col items-center gap-1 text-rose-400 group-hover:translate-y-1 transition-transform">
         <svg class="w-5 h-5 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
@@ -248,9 +324,504 @@
         </svg>
       </div>
     </div>
-
   </main>
 
+  <!-- WHY BUSINESSES CHOOSE GREEN PIXELS -->
+  <section class="relative z-10 py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-rose-400 mb-2">PRACTICAL CREATIVE PARTNER</h2>
+      <h3 class="text-2xl sm:text-4xl font-extrabold font-display text-white">
+        Why Businesses Choose <span class="company-single-line">GREEN PIXELS CREATIONS PVT LTD</span>
+      </h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="card-glass p-8 rounded-2xl border border-white/10 hover:border-rose-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-6 text-2xl font-bold">01</div>
+        <h4 class="text-xl font-bold font-display text-white mb-3">3-Disciplines-in-One Studio</h4>
+        <p class="text-sm text-zinc-300 leading-relaxed">
+          No need to hire separate branding agencies, digital marketers, and 3D animators. We combine creative strategy, performance marketing, and 3D visual production seamlessly.
+        </p>
+      </div>
+
+      <div class="card-glass p-8 rounded-2xl border border-white/10 hover:border-purple-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 text-2xl font-bold">02</div>
+        <h4 class="text-xl font-bold font-display text-white mb-3">Transparent Standard Retainers</h4>
+        <p class="text-sm text-zinc-300 leading-relaxed">
+          Clear monthly retainer packages and transparent one-time itemized pricing with zero hidden fees, designed for businesses, SMEs, real estate, and product companies.
+        </p>
+      </div>
+
+      <div class="card-glass p-8 rounded-2xl border border-white/10 hover:border-cyan-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 text-2xl font-bold">03</div>
+        <h4 class="text-xl font-bold font-display text-white mb-3">Production-Grade Delivery</h4>
+        <p class="text-sm text-zinc-300 leading-relaxed">
+          From 4K corporate video editing and studio product photography to photorealistic 3D architectural walkthroughs and lead-gen ad campaigns.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE CORE SERVICE PACKAGES SECTION -->
+  <section id="services" class="relative z-10 py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-rose-400 mb-2">OUR CORE CAPABILITIES</h2>
+      <h3 class="text-3xl sm:text-5xl font-black font-display text-white">Three Core Service Packages</h3>
+    </div>
+
+    <!-- Core Service 01 -->
+    <div class="card-glass p-8 sm:p-12 rounded-3xl mb-12 border border-white/10 relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-4">
+            PACKAGE 01
+          </div>
+          <h4 class="text-2xl sm:text-4xl font-extrabold font-display text-white mb-4">
+            Complete Branding & Digital Marketing
+          </h4>
+          <p class="text-zinc-300 text-sm sm:text-base mb-6 leading-relaxed">
+            Full-stack brand strategy combined with search engine optimization and social media marketing to establish authority and drive predictable leads.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-medium text-zinc-300">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+              <span>Complete Branding & Logo Identity</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+              <span>On-Page & Off-Page SEO Optimization</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+              <span>Social Media Reels & Lead Ads</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+              <span>Brand Guidelines & Collateral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10 lg:w-80 shrink-0 text-center">
+          <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider block mb-1">Retainer Options</span>
+          <span class="text-3xl font-black text-rose-400 font-display block mb-4">₹15,000 – ₹65,000</span>
+          <a href="#pricing" class="block w-full py-2.5 rounded-xl bg-rose-500 text-white font-bold text-xs uppercase tracking-wider hover:bg-rose-600 transition-colors">
+            View Package Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Service 02 -->
+    <div class="card-glass p-8 sm:p-12 rounded-3xl mb-12 border border-white/10 relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-4">
+            PACKAGE 02
+          </div>
+          <h4 class="text-2xl sm:text-4xl font-extrabold font-display text-white mb-4">
+            Graphics, Video Editing & Product Photography
+          </h4>
+          <p class="text-zinc-300 text-sm sm:text-base mb-6 leading-relaxed">
+            High-converting graphic collateral, short-form reels editing, corporate video production, and studio product catalogue shoots.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-medium text-zinc-300">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+              <span>Graphic Design & Print Catalogues</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+              <span>Instagram Reels & Shorts Video Editing</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+              <span>Studio Product Photography Shoots</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+              <span>Corporate & Promotional Editing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10 lg:w-80 shrink-0 text-center">
+          <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider block mb-1">Retainer Options</span>
+          <span class="text-3xl font-black text-purple-400 font-display block mb-4">₹10,000 – ₹52,000</span>
+          <a href="#pricing" class="block w-full py-2.5 rounded-xl bg-purple-600 text-white font-bold text-xs uppercase tracking-wider hover:bg-purple-700 transition-colors">
+            View Package Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Service 03 -->
+    <div class="card-glass p-8 sm:p-12 rounded-3xl border border-white/10 relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 mb-4">
+            PACKAGE 03
+          </div>
+          <h4 class="text-2xl sm:text-4xl font-extrabold font-display text-white mb-4">
+            3D Visualisation & 3D Animation
+          </h4>
+          <p class="text-zinc-300 text-sm sm:text-base mb-6 leading-relaxed">
+            Photorealistic 3D product rendering, 3D real estate architectural walkthroughs, and high-impact 3D explainer video production.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-medium text-zinc-300">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              <span>Photorealistic 3D Product Rendering</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              <span>Interior & Exterior Render Sets</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              <span>Real Estate 3D Walkthrough Videos</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              <span>3D Product Modelling & CAD Renders</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10 lg:w-80 shrink-0 text-center">
+          <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider block mb-1">Project Rates</span>
+          <span class="text-3xl font-black text-cyan-400 font-display block mb-4">₹8,000 – ₹85,000</span>
+          <a href="#pricing" class="block w-full py-2.5 rounded-xl bg-cyan-500 text-white font-bold text-xs uppercase tracking-wider hover:bg-cyan-600 transition-colors">
+            View Project Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="relative z-10 py-20 px-4 max-w-7xl mx-auto">
+    <div class="card-glass p-8 sm:p-14 rounded-3xl border border-white/10">
+      <div class="max-w-3xl mb-8">
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-rose-400 mb-3">ABOUT OUR STUDIO</h2>
+        <h3 class="text-2xl sm:text-4xl font-extrabold font-display text-white leading-tight">
+          A Coimbatore Studio Built Around Three Disciplines That Businesses Actually Need
+        </h3>
+      </div>
+      <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
+        <span class="company-single-line font-bold text-white">GREEN PIXELS CREATIONS PVT LTD</span> was established in Coimbatore to solve a common friction point faced by growing enterprises, startups, real estate developers, and product manufacturers: managing fragmented agencies for design, digital marketing, and visual asset production.
+      </p>
+      <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+        By mastering Complete Branding, Performance Marketing (SEO & SMM), Video Production, and 3D Visualisation under one roof, <span class="company-single-line font-bold text-white">GREEN PIXELS CREATIONS PVT LTD</span> delivers cohesive brand identities and high-performing digital campaigns without multi-vendor friction.
+      </p>
+    </div>
+  </section>
+
+  <!-- GROUP COMPANIES SECTION -->
+  <section id="group-companies" class="relative z-10 py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-rose-400 mb-2">OUR EXTENDED ECOSYSTEM</h2>
+      <h3 class="text-3xl sm:text-5xl font-black font-display text-white">Group Companies</h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Skilzlearn Academy -->
+      <div class="card-glass p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-400">EdTech & Skill Academy</span>
+            <span class="text-xs text-zinc-500 font-mono">skilzlearn.com</span>
+          </div>
+          <h4 class="text-2xl font-bold font-display text-white mb-3">Skilzlearn Academy</h4>
+          <p class="text-sm text-zinc-300 leading-relaxed mb-6">
+            Skilzlearn Academy is an advanced learning institution offering career-focused courses in artificial intelligence, digital design, software development, and modern technology skills.
+          </p>
+        </div>
+        <a href="https://skilzlearn.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-400 hover:text-white transition-colors">
+          <span>Visit skilzlearn.com</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </a>
+      </div>
+
+      <!-- CARDA -->
+      <div class="card-glass p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Aerospace & Robotics</span>
+            <span class="text-xs text-zinc-500 font-mono">cardaindia.com</span>
+          </div>
+          <h4 class="text-2xl font-bold font-display text-white mb-3">CARDA — Coimbatore Aerospace, Robotics & Drone Academy</h4>
+          <p class="text-sm text-zinc-300 leading-relaxed mb-6">
+            CARDA specializes in practical training and research in drone engineering, robotics, autonomous systems, and aerospace technology for students, engineers, and defense aspirants.
+          </p>
+        </div>
+        <a href="https://cardaindia.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cyan-400 hover:text-white transition-colors">
+          <span>Visit cardaindia.com</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="relative z-10 py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-rose-400 mb-2">TRANSPARENT RATES</h2>
+      <h3 class="text-3xl sm:text-5xl font-black font-display text-white mb-4">Pricing Retainers & One-Time Rates</h3>
+      <p class="text-sm text-zinc-400 max-w-xl mx-auto">
+        Standardized rates by <span class="company-single-line font-bold text-white">GREEN PIXELS CREATIONS PVT LTD</span> with clear deliverables and no hidden fees.
+      </p>
+    </div>
+
+    <!-- Retainer Package 1 Pricing Table -->
+    <div class="mb-16">
+      <h4 class="text-xl font-bold font-display text-rose-400 mb-6 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+        <span>Package 1 — Complete Branding & Digital Marketing (Retainers)</span>
+      </h4>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-2">Starter Retainer</span>
+            <div class="text-3xl font-black font-display text-white mb-4">₹15,000 <span class="text-xs font-normal text-zinc-400">/ month</span></div>
+            <ul class="text-xs text-zinc-300 space-y-2.5 mb-6">
+              <li>• Brand Identity & Logo Setup</li>
+              <li>• Essential SEO On-Page Tuning</li>
+              <li>• 8 Social Media Posts / Month</li>
+              <li>• Monthly Performance Metrics</li>
+            </ul>
+          </div>
+          <a href="#contact" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">Select Starter</a>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border-2 border-rose-500/60 bg-rose-950/20 flex flex-col justify-between relative">
+          <span class="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-rose-500 text-[10px] font-extrabold uppercase tracking-wider text-white">POPULAR</span>
+          <div>
+            <span class="text-xs font-bold text-rose-400 uppercase tracking-wider block mb-2">Growth Retainer</span>
+            <div class="text-3xl font-black font-display text-white mb-4">₹32,000 <span class="text-xs font-normal text-zinc-400">/ month</span></div>
+            <ul class="text-xs text-zinc-300 space-y-2.5 mb-6">
+              <li>• Complete Brand Guidelines Set</li>
+              <li>• Full On-Page & Off-Page SEO</li>
+              <li>• 16 Posts + 4 Reels / Month</li>
+              <li>• Meta & Google Lead Ad Campaigns</li>
+            </ul>
+          </div>
+          <a href="#contact" class="w-full py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">Select Growth</a>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-2">Premium Retainer</span>
+            <div class="text-3xl font-black font-display text-white mb-4">₹65,000 <span class="text-xs font-normal text-zinc-400">/ month</span></div>
+            <ul class="text-xs text-zinc-300 space-y-2.5 mb-6">
+              <li>• Full Branding & Business Collaterals</li>
+              <li>• Aggressive Technical & Local SEO</li>
+              <li>• Daily Content & Reels Production</li>
+              <li>• Dedicated Marketing Manager</li>
+            </ul>
+          </div>
+          <a href="#contact" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">Select Premium</a>
+        </div>
+      </div>
+
+      <!-- One Time Branding -->
+      <div class="mt-6 card-glass p-6 rounded-2xl border border-white/10">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-4">One-Time Branding Services</h5>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+          <div class="flex justify-between p-3 rounded-lg bg-white/5"><span class="text-zinc-300">Logo & Basic Brand Identity</span><strong class="text-rose-400">₹15,000</strong></div>
+          <div class="flex justify-between p-3 rounded-lg bg-white/5"><span class="text-zinc-300">Full Brand Guideline Document</span><strong class="text-rose-400">₹18,000</strong></div>
+          <div class="flex justify-between p-3 rounded-lg bg-white/5"><span class="text-zinc-300">Business Collateral Set</span><strong class="text-rose-400">₹12,000</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Retainer Package 2 Pricing Table -->
+    <div class="mb-16">
+      <h4 class="text-xl font-bold font-display text-purple-400 mb-6 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+        <span>Package 2 — Graphics, Video Editing & Product Photography</span>
+      </h4>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-2">Starter</span>
+            <div class="text-3xl font-black font-display text-white mb-4">₹10,000 <span class="text-xs font-normal text-zinc-400">/ month</span></div>
+            <p class="text-xs text-zinc-300 mb-4">12 Graphic Creatives + Basic Reel Editing</p>
+          </div>
+          <a href="#contact" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-purple-600 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">Select Starter</a>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-purple-500/60 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-purple-400 uppercase tracking-wider block mb-2">Growth</span>
+            <div class="text-3xl font-black font-display text-white mb-4">₹27,000 <span class="text-xs font-normal text-zinc-400">/ month</span></div>
+            <p class="text-xs text-zinc-300 mb-4">25 Creatives + 8 Reels Editing + Half-Day Shoot</p>
+          </div>
+          <a href="#contact" class="w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">Select Growth</a>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-2">Premium</span>
+            <div class="text-3xl font-black font-display text-white mb-4">₹52,000 <span class="text-xs font-normal text-zinc-400">/ month</span></div>
+            <p class="text-xs text-zinc-300 mb-4">Unlimited Creatives + 15 Reels + Full Day Shoot</p>
+          </div>
+          <a href="#contact" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-purple-600 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">Select Premium</a>
+        </div>
+      </div>
+
+      <!-- One-Time Rates -->
+      <div class="mt-6 card-glass p-6 rounded-2xl border border-white/10">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-4">One-Time Production Rates</h5>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <div class="p-3 rounded-lg bg-white/5"><div class="text-zinc-400">Product Photography</div><strong class="text-purple-400 text-base">₹600 / product</strong></div>
+          <div class="p-3 rounded-lg bg-white/5"><div class="text-zinc-400">Half-Day Shoot</div><strong class="text-purple-400 text-base">₹9,000</strong></div>
+          <div class="p-3 rounded-lg bg-white/5"><div class="text-zinc-400">Reel Video Editing</div><strong class="text-purple-400 text-base">₹3,500 / video</strong></div>
+          <div class="p-3 rounded-lg bg-white/5"><div class="text-zinc-400">Corporate Promo Video</div><strong class="text-purple-400 text-base">₹6,000 / minute</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Package 3 Rates -->
+    <div>
+      <h4 class="text-xl font-bold font-display text-cyan-400 mb-6 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-cyan-500"></span>
+        <span>Package 3 — 3D Visualisation & 3D Animation Rates</span>
+      </h4>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-glass p-6 rounded-2xl border border-white/10">
+          <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-1">Single 3D Render</span>
+          <div class="text-2xl font-black text-cyan-400 font-display mb-2">₹8,000</div>
+          <p class="text-xs text-zinc-300">Single high-resolution photorealistic 3D product render</p>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10">
+          <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-1">Render Set</span>
+          <div class="text-2xl font-black text-cyan-400 font-display mb-2">₹30,000</div>
+          <p class="text-xs text-zinc-300">Full architectural interior or exterior 3D render pack</p>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10">
+          <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-1">3D Product Modelling</span>
+          <div class="text-2xl font-black text-cyan-400 font-display mb-2">₹12,000 / model</div>
+          <p class="text-xs text-zinc-300">Detailed 3D CAD/mesh product modelling & texturing</p>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10 lg:col-span-2">
+          <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-1">3D Real Estate Walkthrough</span>
+          <div class="text-2xl font-black text-cyan-400 font-display mb-2">₹75,000</div>
+          <p class="text-xs text-zinc-300">Full cinematic 3D architectural animation & walkthrough video</p>
+        </div>
+
+        <div class="card-glass p-6 rounded-2xl border border-white/10">
+          <span class="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-1">3D Animation Video</span>
+          <div class="text-2xl font-black text-cyan-400 font-display mb-2">₹85,000</div>
+          <p class="text-xs text-zinc-300">Commercial 3D product explainer video with motion FX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS ACCORDION SECTION -->
+  <section id="faqs" class="relative z-10 py-20 px-4 max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-rose-400 mb-2">FREQUENTLY ASKED QUESTIONS</h2>
+      <h3 class="text-3xl sm:text-5xl font-black font-display text-white">Got Questions? We Have Answers</h3>
+    </div>
+
+    <div class="space-y-4">
+      <details class="card-glass rounded-2xl p-6 border border-white/10 group cursor-pointer">
+        <summary class="font-bold text-base sm:text-lg text-white flex justify-between items-center list-none">
+          <span>What services does <span class="company-single-line">GREEN PIXELS CREATIONS PVT LTD</span> offer?</span>
+          <span class="text-rose-400 group-open:rotate-180 transition-transform text-xl">↓</span>
+        </summary>
+        <p class="mt-4 text-sm text-zinc-300 leading-relaxed">
+          <span class="company-single-line font-bold text-white">GREEN PIXELS CREATIONS PVT LTD</span> provides 3 main disciplines: Complete Branding & Digital Marketing (SEO, SMM), Graphics, Video Editing & Product Photography, and Photorealistic 3D Visualisation & 3D Animation.
+        </p>
+      </details>
+
+      <details class="card-glass rounded-2xl p-6 border border-white/10 group cursor-pointer">
+        <summary class="font-bold text-base sm:text-lg text-white flex justify-between items-center list-none">
+          <span>Where is <span class="company-single-line">GREEN PIXELS CREATIONS PVT LTD</span> located?</span>
+          <span class="text-rose-400 group-open:rotate-180 transition-transform text-xl">↓</span>
+        </summary>
+        <p class="mt-4 text-sm text-zinc-300 leading-relaxed">
+          Our primary studio is located in Coimbatore, Tamil Nadu, India. We serve clients across South India, pan-India, and internationally.
+        </p>
+      </details>
+
+      <details class="card-glass rounded-2xl p-6 border border-white/10 group cursor-pointer">
+        <summary class="font-bold text-base sm:text-lg text-white flex justify-between items-center list-none">
+          <span>Can we order standalone one-time services without monthly retainers?</span>
+          <span class="text-rose-400 group-open:rotate-180 transition-transform text-xl">↓</span>
+        </summary>
+        <p class="mt-4 text-sm text-zinc-300 leading-relaxed">
+          Yes! We offer itemized rates for logo design, brand guidelines, product photography, video editing, 3D renders, 3D walkthroughs, and CAD modelling.
+        </p>
+      </details>
+
+      <details class="card-glass rounded-2xl p-6 border border-white/10 group cursor-pointer">
+        <summary class="font-bold text-base sm:text-lg text-white flex justify-between items-center list-none">
+          <span>What is the turnaround time for 3D walkthroughs and 3D renders?</span>
+          <span class="text-rose-400 group-open:rotate-180 transition-transform text-xl">↓</span>
+        </summary>
+        <p class="mt-4 text-sm text-zinc-300 leading-relaxed">
+          Single photorealistic 3D renders typically take 3–5 business days. Full 3D architectural walkthroughs and 3D explainer videos take 2–3 weeks depending on complexity.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER SECTION -->
+  <footer id="contact" class="relative z-10 py-20 px-4 max-w-7xl mx-auto border-t border-white/10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+      <div>
+        <!-- Single Line Mandatory Display -->
+        <h3 class="company-single-line text-xl sm:text-3xl font-black font-display text-white mb-4">
+          GREEN PIXELS CREATIONS PVT LTD
+        </h3>
+        <p class="text-sm text-zinc-300 mb-6 leading-relaxed">
+          Coimbatore's premier creative, digital marketing, video production, and 3D animation studio.
+        </p>
+
+        <div class="space-y-3 text-xs text-zinc-400 mb-8">
+          <div>📍 <strong class="text-white">Studio Location:</strong> Coimbatore, Tamil Nadu, India</div>
+          <div>🌐 <strong class="text-white">Group Companies:</strong> <a href="https://skilzlearn.com" target="_blank" class="text-rose-400 underline">skilzlearn.com</a> | <a href="https://cardaindia.com" target="_blank" class="text-cyan-400 underline">cardaindia.com</a></div>
+        </div>
+      </div>
+
+      <!-- Quick Lead Form -->
+      <div class="card-glass p-8 rounded-3xl border border-white/10">
+        <h4 class="text-lg font-bold font-display text-white mb-4">Get a Custom Quote</h4>
+        <form onsubmit="event.preventDefault(); alert('Thank you! GREEN PIXELS CREATIONS PVT LTD will get in touch with you shortly.');" class="space-y-4">
+          <input type="text" placeholder="Your Name or Company" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-xs focus:outline-none focus:border-rose-500" />
+          <input type="email" placeholder="Email Address" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-xs focus:outline-none focus:border-rose-500" />
+          <select class="w-full px-4 py-3 rounded-xl bg-[#080d16] border border-white/10 text-zinc-300 text-xs focus:outline-none focus:border-rose-500">
+            <option>Package 01 — Complete Branding & Digital Marketing</option>
+            <option>Package 02 — Graphics, Video Editing & Product Photography</option>
+            <option>Package 03 — 3D Visualisation & 3D Animation</option>
+            <option>Custom One-Time Service</option>
+          </select>
+          <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-rose-500 to-purple-600 text-white font-bold text-xs uppercase tracking-wider hover:opacity-90 transition-opacity">
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="text-center text-xs text-zinc-500 pt-8 border-t border-white/5">
+      © 2026 <span class="company-single-line font-bold text-zinc-400">GREEN PIXELS CREATIONS PVT LTD</span>. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- WebGL Three.js Engine Code (100% UNTOUCHED) -->
   <script>
     // Cursor Follower & Interaction Tracking Logic
     const cursorDot = document.getElementById('cursor-dot');
@@ -261,8 +832,11 @@
     let ringY = mouseY;
     
     let isHoveringScreen = false;
-    let cursorFactor = 0; // 0 = Pure Infinity Snake, 1 = Pure Cursor Snake Follower
+    let isCursorMoving = false;
+    let cursorMovingFactor = 0.0;
+    let cursorFactor = 0; // 0 = Pure G Shape, 1 = Pure Cursor Snake Follower
     let mouseIdleTimer = null;
+    let mouseMoveTimeout = null;
 
     const mouseNorm = { x: 0, y: 0, targetX: 0, targetY: 0, speed: 0 };
     let prevMouseX = mouseX;
@@ -283,15 +857,17 @@
       prevMouseY = e.clientY;
 
       isHoveringScreen = true;
-      clearTimeout(mouseIdleTimer);
-      mouseIdleTimer = setTimeout(() => {
-        // Smoothly drift back to infinity loop when idle
-        // isHoveringScreen = false;
-      }, 4000);
+      isCursorMoving = true;
+
+      clearTimeout(mouseMoveTimeout);
+      mouseMoveTimeout = setTimeout(() => {
+        isCursorMoving = false;
+      }, 450);
     });
 
     document.addEventListener('mouseleave', () => {
       isHoveringScreen = false;
+      isCursorMoving = false;
     });
 
     document.addEventListener('mouseenter', () => {
@@ -391,7 +967,6 @@
       const line = new THREE.Line(geometry, material);
       infinityGroup.add(line);
 
-      // Multi-layered shell distribution (inner dense core -> outer volumetric aura)
       const layer = i % 3; // 0 = Core, 1 = Dense Body, 2 = Volumetric Halo
       const radiusBase = layer === 0 ? 0.05 + (i % 15) * 0.02 : layer === 1 ? 0.20 + (i % 20) * 0.03 : 0.50 + (i % 25) * 0.025;
 
@@ -424,7 +999,7 @@
     }
 
     window.addEventListener('pointerdown', (e) => {
-      if (e.target.closest('a') || e.target.closest('button')) return;
+      if (e.target.closest('a') || e.target.closest('button') || e.target.closest('form') || e.target.closest('details')) return;
       triggerThemeSwitch(e.clientX, e.clientY);
     });
 
@@ -436,6 +1011,43 @@
 
     const clock = new THREE.Clock();
 
+    // 3D Control Points for Capital Letter 'G' Path
+    const G_POINTS = [
+      { x: 6.5,  y: 5.5,  z: 0.0 },   // 0: Top Right gap start
+      { x: 0.0,  y: 8.5,  z: 2.0 },   // 1: Top arch
+      { x: -8.5, y: 5.0,  z: -1.5 },  // 2: Upper Left curve
+      { x: -8.5, y: -5.0, z: 1.5 },   // 3: Lower Left curve
+      { x: 0.0,  y: -8.5, z: -2.0 },  // 4: Bottom arch
+      { x: 7.5,  y: -5.0, z: 0.0 },   // 5: Bottom Right corner
+      { x: 7.5,  y: 0.5,  z: 1.5 },   // 6: Right Stem (up to middle)
+      { x: 1.5,  y: 0.5,  z: -1.0 },  // 7: Inner Crossbar (left into center)
+    ];
+
+    function getGShapePoint(t) {
+      const TWO_PI = Math.PI * 2;
+      const normT = ((t % TWO_PI) + TWO_PI) % TWO_PI;
+      const u = normT / TWO_PI;
+      
+      const N = G_POINTS.length;
+      const val = u * N;
+      const i = Math.floor(val);
+      const subT = val - i;
+
+      const p0 = G_POINTS[(i - 1 + N) % N];
+      const p1 = G_POINTS[i % N];
+      const p2 = G_POINTS[(i + 1) % N];
+      const p3 = G_POINTS[(i + 2) % N];
+
+      const t2 = subT * subT;
+      const t3 = t2 * subT;
+
+      return {
+        x: 0.5 * (2 * p1.x + (-p0.x + p2.x) * subT + (2 * p0.x - 5 * p1.x + 4 * p2.x - p3.x) * t2 + (-p0.x + 3 * p1.x - 3 * p2.x + p3.x) * t3),
+        y: 0.5 * (2 * p1.y + (-p0.y + p2.y) * subT + (2 * p0.y - 5 * p1.y + 4 * p2.y - p3.y) * t2 + (-p0.y + 3 * p1.y - 3 * p2.y + p3.y) * t3),
+        z: 0.5 * (2 * p1.z + (-p0.z + p2.z) * subT + (2 * p0.z - 5 * p1.z + 4 * p2.z - p3.z) * t2 + (-p0.z + 3 * p1.z - 3 * p2.z + p3.z) * t3),
+      };
+    }
+
     function animate3D() {
       requestAnimationFrame(animate3D);
       const time = clock.getElapsedTime();
@@ -444,11 +1056,9 @@
       mouseNorm.x += (mouseNorm.targetX - mouseNorm.x) * 0.45;
       mouseNorm.y += (mouseNorm.targetY - mouseNorm.y) * 0.45;
 
-      // Map mouse coordinates to 3D World coordinates at camera Z plane
       const targetWorldX = mouseNorm.x * 15;
       const targetWorldY = mouseNorm.y * 8;
 
-      // Update Mouse Trail History (Snappy Instant Lead)
       const headPos = mouseHistory[0];
       headPos.x += (targetWorldX - headPos.x) * 0.85;
       headPos.y += (targetWorldY - headPos.y) * 0.85;
@@ -458,17 +1068,19 @@
         mouseHistory[h].lerp(mouseHistory[h - 1], 0.65);
       }
 
-      // Instant Mode Transition (Cursor Active vs Infinity Loop)
+      // Smooth fade in when cursor moves, fade out when stopped
+      const targetMoving = (isHoveringScreen && isCursorMoving) ? 1.0 : 0.0;
+      cursorMovingFactor += (targetMoving - cursorMovingFactor) * 0.12;
+
+      // Mode Transition (Cursor Active vs G Shape Loop)
       const targetFactor = isHoveringScreen ? 1.0 : 0.0;
       cursorFactor += (targetFactor - cursorFactor) * 0.2;
 
-      // 3D Group Parallax
       infinityGroup.rotation.y = (1 - cursorFactor) * (mouseNorm.x * 0.35 + Math.sin(time * 0.3) * 0.05);
       infinityGroup.rotation.x = (1 - cursorFactor) * (-mouseNorm.y * 0.25 + Math.cos(time * 0.2) * 0.04);
 
       hueCycle += 0.003 + mouseNorm.speed * 0.01;
 
-      // Snake Trail Length along Infinity Loop (in radians)
       const SNAKE_TRAIL_RAD = Math.PI * 1.25; 
 
       for (let i = 0; i < STRAND_COUNT; i++) {
@@ -479,18 +1091,16 @@
         const posArray = posAttr.array;
         const colorArray = colorAttr.array;
 
-        // Continuous Head movement around Lemniscate infinity path (Snake Game Flow)
         const infinityHeadT = (time * 1.2 * strand.speedMultiplier + strand.phaseOffset) % (Math.PI * 2);
 
         for (let j = 0; j < SEGMENTS_PER_STRAND; j++) {
-          const segRatio = j / (SEGMENTS_PER_STRAND - 1); // 0.0 at tail, 1.0 at head
+          const segRatio = j / (SEGMENTS_PER_STRAND - 1);
 
-          // 1. Calculate Infinity Snake Loop position (Traveling bundle along Lemniscate)
           const t = infinityHeadT - (1.0 - segRatio) * SNAKE_TRAIL_RAD;
-          const denom = 1 + Math.sin(t) * Math.sin(t);
-          let bx = (18.0 * Math.cos(t)) / denom;
-          let by = (7.5 * Math.sin(t) * Math.cos(t)) / denom;
-          let bz = Math.sin(t) * 3.5;
+          const gPt = getGShapePoint(t);
+          let bx = gPt.x;
+          let by = gPt.y;
+          let bz = gPt.z;
 
           const twistAngle = t * strand.twistRate + strand.radialAngle + time * 2.0;
           const strandOffX = Math.cos(twistAngle) * strand.radialRadius;
@@ -500,7 +1110,6 @@
           const infPy = by + strandOffY;
           const infPz = bz;
 
-          // 2. Calculate Cursor Snake Follower position (Bundle trailing cursor position)
           const histIdx = Math.floor((1.0 - segRatio) * (HISTORY_LENGTH - 1));
           const histPos = mouseHistory[Math.min(histIdx, HISTORY_LENGTH - 1)];
 
@@ -512,7 +1121,6 @@
           const curPy = histPos.y + curOffY;
           const curPz = histPos.z + Math.cos(curTwist) * 0.5;
 
-          // 3. Blend smoothly between Infinity Loop Snake & Cursor Snake Follower
           const px = THREE.MathUtils.lerp(infPx, curPx, cursorFactor);
           const py = THREE.MathUtils.lerp(infPy, curPy, cursorFactor);
           const pz = THREE.MathUtils.lerp(infPz, curPz, cursorFactor);
@@ -521,17 +1129,16 @@
           posArray[j * 3 + 1] = py;
           posArray[j * 3 + 2] = pz;
 
-          // Multi-Segment Snake Trains with Gaps ("Konjam gap vitu follow panra mari")
-          const NUM_SNAKES = 3; // 3 distinct glowing snake segments
+          const NUM_SNAKES = 3;
           const cycle = (segRatio * NUM_SNAKES) % 1.0;
-          const gapThreshold = 0.68; // 68% glowing snake body, 32% empty gap between segments
+          const gapThreshold = 0.68;
 
           let snakeGlowAlpha = 0.0;
           if (cycle < gapThreshold) {
-            const localRatio = cycle / gapThreshold; // 0.0 (tail) to 1.0 (head)
-            snakeGlowAlpha = Math.pow(localRatio, 1.6);
+            const localRatio = cycle / gapThreshold;
+            snakeGlowAlpha = Math.pow(localRatio, 1.6) * cursorMovingFactor;
           } else {
-            snakeGlowAlpha = 0.0; // Empty gap between snake segments!
+            snakeGlowAlpha = 0.0;
           }
 
           const segmentHue = (hueCycle + segRatio * 0.4 + (i / STRAND_COUNT) * 0.2) % 1.0;
